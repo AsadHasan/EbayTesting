@@ -12,20 +12,24 @@ namespace AutoTesting.steps.helpers
 
         public static IWebDriver getDriver()
         {
-            var browser = ConfigurationManager.AppSettings["browser1"];
-            switch (browser)
+            if (webDriver == null)
             {
-                case "chrome":
-                    var options = new ChromeOptions();
-                    options.AddArgument("--headless");
-                    webDriver = new ChromeDriver(options);         
-                    break;
-                case "internetexplorer":
-                    webDriver = new InternetExplorerDriver();
-                    break;
-                case "edge":
-                    webDriver = new EdgeDriver();
-                    break;
+                var browser = ConfigurationManager.AppSettings["browser1"];
+                switch (browser)
+                {
+                    case "chrome":
+                        var options = new ChromeOptions();
+                        options.AddArguments("--headless");
+                        options.AddArguments("--diable-gpu");
+                        webDriver = new ChromeDriver(options);
+                        break;
+                    case "internetexplorer":
+                        webDriver = new InternetExplorerDriver();
+                        break;
+                    case "edge":
+                        webDriver = new EdgeDriver();
+                        break;
+                }
             }
             return webDriver;
         }

@@ -21,3 +21,4 @@ C:\Users\ASHA1\source\repos\AutoTesting\AutoTesting\bin\Debug\WebDriver.xml
 C:\Users\ASHA1\source\repos\AutoTesting\AutoTesting\bin\Debug\WebDriver.Support.xml
 C:\Users\ASHA1\source\repos\AutoTesting\AutoTesting\obj\Debug\AutoTesting.dll
 C:\Users\ASHA1\source\repos\AutoTesting\AutoTesting\obj\Debug\AutoTesting.pdb
+C:\Users\ASHA1\source\repos\AutoTesting\AutoTesting\bin\Debug\chromedriver.exe
