@@ -7,7 +7,7 @@ namespace AutoTesting.steps
     public sealed class Hooks
     {
         [AfterTestRun]
-        public void cleanup()
+        public static void cleanup()
         {
             getDriver().Quit();
         }
